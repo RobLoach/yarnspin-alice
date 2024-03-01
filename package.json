@@ -1,0 +1,15 @@
+{
+  "name": "yarnspin-alice",
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "scripts": {
+    "prepublish": "npm run package",
+    "publish": "gh-pages -d package",
+    "start": "yarnspin --window",
+    "build": "yarnspin --compile",
+    "prepackage": "mkdir -p package",
+    "package": "yarnspin -p package/index.html"
+  }
+}
