@@ -2,6 +2,8 @@
 
 The classic choose-your-own-adventure book, *Alice's Wonderland Adventure*, adapted to [Yarnspin](https://github.com/mattiasgustavsson/yarnspin).
 
+![Alice's Wonderland Adventure](images/title.png)
+
 Try it in your browser here:
 https://robloach.github.io/yarnspin-alice/
 
