@@ -69,14 +69,15 @@ img: 4.png
 
 txt: You grab for a cupboard and scramble inside. But you are surprised to find that the inside of the cupboard is a long tunnel spiraling downward.
 txt: You try to crawl back out, but the sides are too steep. You slide down at breakneck speed!
-txt: Suddenly you shoot out the end-and land right on top of someone!
 act: page5
 
 
 === page5 ===
+img: 5.png
 
-scr: 5.png
-auto: page7, 5s
+txt: Suddenly you shoot out the end-and land right on top of someone!
+
+act: page7
 
 
 === page6 ===
