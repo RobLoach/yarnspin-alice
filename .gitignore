@@ -1,0 +1,8 @@
+*.pdf
+*.dat
+*.w64
+*.html
+/yarnspin
+/build
+.cache
+content.txt
