@@ -8,18 +8,25 @@ resolution: full
 alone_text: 
 nothing_text: 
 
-
 === title ===
 
 scr: title.png
-mus: forest.ogg
-auto: page0, 5s
+mus: forest.ogg,restart
+act: detach alice
+auto: readthisfirst, 5s
 
+
+=== readthisfirst ===
+
+scr: readthisfirst.png
+auto: page0, 5s
 
 === page0 ===
 img: 0.png
 
-txt: It is a lazy summer day, and you are sitting by the bank of a peaceful river, enjoying the sunshine. A swan gracefully glides by, and you watch until it is out of sight. You sigh and lean back against the tree. You are feeling happy and drowsy. You close your eyes...
+txt: It is a lazy summer day, and you are sitting by the bank of a peaceful river, enjoying the sunshine. A swan gracefully glides by, and you watch until it is out of sight. You sigh and lean back against the tree. You are feeling happy and drowsy.
+
+opt: Close your eyes...
 act: page1
 
 
@@ -28,16 +35,18 @@ img: 1.png
 
 txt: You are just dozing off when you hear someone shout, "Wait!".
 txt: You open your eyes, and see a girl running by. She looks as if she's chasing someone.
-txt: You jump up and run alongside her.
+
+opt: Jump up and run alongside her
 act: page1_1
 
 
 === page1_1 ===
 
 you: Where are you going?
-alice: I haven't got time to talk, I might lose him!
+girl: I haven't got time to talk, I might lose him!
 you: Lose who? Who are you chasing?
-alice: The White Rabbit
+girl: The White Rabbit
+
 act: page2
 
 
@@ -46,8 +55,9 @@ img: 2.png
 
 txt: You are about to ask her why she is chasing a white rabbit when she cries, "Look! He's going in that hole!"
 txt: And without another word, the girl crawls in a hole nearby. You don't know what's going on, but you want to find out.
-txt: "Wait for me!" you shout, and crawl into the hole, too.
+txt: "Wait for me!" you shout.
 
+opt: Crawl into the hole
 act: page3
 
 
@@ -69,6 +79,7 @@ img: 4.png
 
 txt: You grab for a cupboard and scramble inside. But you are surprised to find that the inside of the cupboard is a long tunnel spiraling downward.
 txt: You try to crawl back out, but the sides are too steep. You slide down at breakneck speed!
+
 act: page5
 
 
@@ -87,8 +98,14 @@ txt: You float down and down until you land with a thump at the bottom of the ho
 txt: "Now, where did she go?" you say aloud.
 txt: "Through my keyhole, into my garden!" says a doorknob.
 
-act: page10
+act: page6_1
 
+=== page6_1 ===
+
+you: Now, where did she go?
+doorknob: Through my keyhole, into my garden!
+
+act: page10
 
 === page7 ===
 img: 7.png
@@ -98,22 +115,36 @@ txt: You must have gotten smaller! What's going on?
 txt: Is it magic, you wonder?
 txt: The girl looks at you. "Oh, dear!" she says. "I'm afraid you just fell on the Queen of Hearts! Let's run before she gets mad and has our heads!"
 
+opt: Run before she gets mad
 act: page8
 
 
 === page8 ===
 img: 8.png
 
-txt: You dash after the girl. "What's your name?" you ask.
-txt: "Alice," she replies.
-txt: "I'm very glad to meet you," you say.
-txt: "I'm glad to meet you, too!"
+txt: You dash after the girl through the forest and find a girl.
+
+opt: Speak with the girl
+act: page8_1
+
+=== page8_1 ===
+
+you: What's your name?
+girl: Alice
+you: I'm very glad to meet you.
+alice: I'm glad to meet you, too!
+act: attach alice
+
+act: page8_2
+
+=== page8_2 ===
+img: 9.png
+
 txt: You and Alice run through a dark forest until you come to a fork in the road.
 
 act: page9
 
-
-=== page9 ===
+=== page9
 img: 9.png
 
 txt: "Which way should we go?" says Alice.
@@ -121,34 +152,65 @@ txt: Suddenly you notice two signs on a tree. One says THIS WAY, and the other s
 txt: "Well?" asks Alice.
 txt: You shrug and say, "We can either go THIS WAY or THAT WAY, I think we should go..."
 
-opt: This way
+opt: THIS WAY
 act: page24
 
-opt: That way
+opt: THAT WAY
 act: page12
 
 
 === page10 ===
-img: 10.png
+img: 6.png
 
 txt: You jump with surprise. A talking doorknob!
-txt: But you recover quickly and say, "How can I get into your garden?"
-txt: "Just wish you were there!" says the doorknob."I find it's much simpler that way."
-txt: You can't believe it will be that easy, but you close your eyes and wish, anyway.
-txt: When you open them again, you find yourself in a beautiful garden.
-txt: "It worked!" you cry.
+txt: But you recover quickly...
 
+act: page10_1
+
+=== page10_1 ===
+you: How can I get into your garden?
+doorknob: Just wish you were there! I find it's much simpler that way.
+
+act: page10_2
+
+=== page10_2 ===
+img: 6.png
+
+txt: You can't believe it will be that easy, but you close your eyes and wish, anyway.
+
+opt: Close your eyes
+act: page10_3
+
+=== page10_3 ===
+img: 10.png
+
+txt: When you open your eyes again, you find yourself in a beautiful garden. It worked!
+
+opt: Look around the garden
 act: page11
 
 
 === page11 ===
-img: 11.png
+img: 11-1.png
 
 txt: Just then you see the girl again. You have both shrunk to the size of the flowers in the garden.
-txt: "Hello," you say. "What's your name?"
-txt: "Alice," answers the girl.
-txt: At that very moment the White Rabbit runs by and he's all dressed up! You ask Alice what she wants to do-follow the rabbit or forget him and go exploring.
-txt: "What do you think we should do?" she asks.
+
+act: page11_1
+
+
+=== page11_1 ===
+
+you: Hello, what's your name?
+girl: Alice
+act: attach alice
+
+act: page11_2
+
+=== page11_2 ===
+img: 11.png
+
+txt: At that very moment the White Rabbit runs by and he's all dressed up!
+txt: You ask Alice what she wants to do: Follow the rabbit, or forget him and go exploring.
 
 opt: Follow the White Rabbit
 act: page14
@@ -161,9 +223,22 @@ act: page18
 img: 12.png
 
 txt: You and Alice follow the path to THAT WAY. You have gone only a little way when you see a Cheshire Cat on the branch of a tree.
-txt: "Excuse me, Cheshire Puss," you say, "are we going the right way for THAT WAY?"
+
+opt: Talk to the Cheshire Cat
+act: page12_1
+
+=== page12_1 ===
+
+you: Excuse me, Cheshire Puss, are we going the right way for THAT WAY?
+
+act: page12_2
+
+=== page12_2
+img: 12.png
+
 txt: Instead of answering, the Cheshire Cat just grins.
 
+opt: Ask the Cheshire Puss again
 act: page13
 
 
@@ -184,8 +259,14 @@ img: 14.png
 
 txt: You and Alice chase after the White Rabbit. He runs down a path and into a small house, all the while saying, "Oh, my fur and whiskers, I'm late! I'm late!"
 txt: You are just about to follow the White Rabbit into the house when he dashes out again.
-txt: "Don't just stand there," he calls to Alice. "Go inside and fetch my gloves!"
 
+act: page14_1
+
+=== page14_1
+
+rabbit: Don't just stand there, go inside and fetch my gloves!
+
+say: Go inside to find his gloves
 act: page15
 
 
@@ -207,13 +288,15 @@ img: 16.png
 txt: The cover is on tightly, however, and you will have to work to get it off.
 txt: From outside you hear the White Rabbit call, "Hurry, please. Seconds count. The Queen will be very angry if I'm late!"
 
+opt: Hurry to find the gloves
 act: page17
 
 
 === page17 ===
 img: 17.png
 
-txt: You don't want the White Rabbit to get into trouble, but as Alice said, you probably won't ever find his gloves. And you are hungry. Should you stop to eat some cookies, or should you keep looking for the gloves?
+txt: You don't want the White Rabbit to get into trouble, but as Alice said, you probably won't ever find his gloves. And you are hungry.
+txt: Should you stop to eat some cookies, or should you keep looking for the gloves?
 
 opt: Eat some cookies
 act: page22
@@ -227,6 +310,12 @@ img: 18.png
 
 txt: The White Rabbit scampers away, and you and Alice turn and run in the opposite direction.
 txt: Soon you come to another garden.
+
+act: page18_1
+
+=== page18_1 ===
+img: 19.png
+
 txt: "What kind of flowers are you?" asks a flower.
 txt: "We're not flowers," says Alice as a bread-and-butterfly glides by. She doesn't seem at all surprised to hear the flower speak.
 txt: "Then you must be weeds!" says a daisy. "Be off with you!"
@@ -248,16 +337,31 @@ img: 20.png
 
 txt: The path leads to a small beach, where a strange race is going on. It has no beginning and no end - everyone just runs around and around a rock.
 txt: "Would you hold this?" asks Alice, as she hands you a little golden key. "I want to join the race."
-txt: You hold the key in your hand and watch the runners. But the race is making you dizzy. You close your eyes for a moment...
 
+opt: Take the key
+act: detach alice
+act: page20_1
+
+
+=== page20_1 ===
+img: 20.png
+
+txt: You hold the key in your hand and watch the runners. But the race is making you dizzy.
+
+opt: Close your eyes for a moment...
 act: page21
-
 
 === page21 ===
 img: 21.png
 
-txt: ...and when you open them, you're back on the riverbank. Was it all a dream?
+txt: ...and when you open your eyes, you're back on the riverbank. Was it all a dream?
 txt: You feel something in your hand. You are still holding the key that Alice gave you!
+
+act: page21_1
+
+=== page21_1 ===
+img: 21.png
+
 txt: You wonder if you can find your way back to the long hall at the bottom of the rabbit hole. You're sure this is the key that opens the door to that wonderful place!
 txt: On the other hand, maybe if you just wish you were back...
 
@@ -334,9 +438,11 @@ act: title
 === page28 ===
 img: 28.png
 
+act: detach alice
 txt: You look high and low for the White Rabbit's gloves. In one room you find a closet with a heavy door. You go inside-and the door slams shut behind you. You try to open it but you can't. You're locked in!
 txt: "Help!" you cry, but you know that Alice can't hear you through the thick door. You will have to open it yourself.
 
+opt: Open the door yourself
 act: page29
 
 
@@ -344,6 +450,14 @@ act: page29
 img: 29.png
 
 txt: You push and pull and tug, but the door won't budge. Then, in the light that shines in under the door, you see a can of oil labeled USE ME.
+
+opt: Use the can of oil
+act: page29_1
+
+
+=== page29_1 ===
+img: 29.png
+
 txt: You squirt the oil around the door and it swings open.
 txt: You rush out of the closet and out of the house, calling for Alice, but she is nowhere to be found.
 
@@ -355,7 +469,15 @@ img: 31.png
 
 txt: "Well, if you must know," says the Cheshire Cat, "THAT WAY leads to THE END."
 txt: "That sounds crazy," you say.
-txt: "Of course it does," answers the cat. txt: "That's because it is crazy. Everything here is crazy."
+txt: "Of course it does," answers the cat.
+txt: "That's because it is crazy. Everything here is crazy."
+
+act: page31
+
+
+=== page31 ===
+img: 31.png
+
 txt: "I think we should go somewhere else," says Alice.
 txt: You would like to talk to the Cheshire Cat some more, but Alice looks frightened.
 
@@ -364,12 +486,6 @@ act: page33
 
 opt: Stay and talk to the cat
 act: page34
-
-
-=== page31 ===
-
-scr: 31.png
-auto: page30, 5s
 
 
 === page32 ===
@@ -466,9 +582,24 @@ act: title
 img: 40.png
 
 txt: When you come out on the other side of the thick bushes, you find yourselves in the middle of a tea party!
-txt: A funny little man in a big hat shouts, "This is the March Hare's un-birthday party. Did you bring a present?"
-txt: "Why, no," you both say.
-txt: "Good!" says the little man. "Then you're un-invited!"
+txt: A funny little man in a big hat shouts...
+
+act: page40_1
+
+=== page40_1 ===
+
+madhatter: This is the March Hare's un-birthday party. Did you bring a present?
+you: Why, no...
+madhatter: Good! Then you're un-invited!
+marchhare: The Mad Hatter is right. You're un-invited, so site down!
+
+say: Sit down
+act: page40_2
+
+=== page40_2 ===
+img: 40.png
+
+txt: You and Alice sit down. In a few minutes you are caught up in the craziest party you've ever been to.
 
 act: page41
 
@@ -476,8 +607,6 @@ act: page41
 === page41 ===
 img: 41.png
 
-txt: "The Mad Hatter is right," says the March Hare. "You're un-invited, so sit down!"
-txt: You and Alice sit down. In a few minutes you are caught up in the craziest party you've ever been to.
 txt: Everyone keeps switching places and switching cups, and the Hatter and Hare stuff a dormouse into the teapot!
 txt: You've never had more fun at an un-birthday party in your life!
 
@@ -489,8 +618,31 @@ act: title
 img: 42.png
 
 txt: After a while you come to a clearing-and there's Alice! But she seems to be in trouble. She is surrounded by giant playing cards, and the Queen of Hearts is shouting, "Off with her head!"
-txt: You rush up to Alice and say, "Can I help?"
-txt: "Silence!" says the Queen, "or I'll have your head, too!"
+txt: You rush up to Alice.
+
+opt: Help Alice
+act: attach alice
+act: page42_1
+
+=== page42_1 ===
+
+queen: Silence! Or I'll have your head, too!
+alice: Don't worry about me. Here, eat this quickly.
+
+act: page42_2
+
+=== page42_2 ===
+img: 42.png
+
+txt: Alice hands you a mushroom.
+
+opt: Eat the mushroom
+act: page42_3
+
+=== page42_3 ===
+
+txt: You take several bites and in a flash you grow to your full size. Then you see that the Queen and her soldiers are just an ordinary pack of playing cards.
+txt: They're not giant at all.
 
 act: page43
 
@@ -498,9 +650,7 @@ act: page43
 === page43 ===
 img: 43.png
 
-txt: "Don't worry about me," says Alice, handing you a mushroom. "Here, eat this quickly!"
-txt: You take several bites and in a flash you grow to your full size. Then you see that the Queen and her soldiers are just an ordinary pack of playing cards.
-txt: They're not giant at all.
+act: detach alice
 txt: You start to swat them away from your feet, and suddenly you find yourself back on the riverbank swatting at a dragonfly! It was all a dream!
 
 opt: The End

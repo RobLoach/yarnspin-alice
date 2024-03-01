@@ -4,6 +4,17 @@ name: Alice
 short: Alice
 face: alice.png
 
+=== girl ===
+
+name: Girl
+short: Girl
+face: alice.png
+
+=== cat ===
+name: Cheshire Cat
+short: Cat
+face: cat.png
+
 === you ===
 name: You
 short: You
@@ -13,3 +24,23 @@ face: player.png
 name: Doorknob
 short: Doorknob
 face: doorknob.png
+
+=== marchhare ===
+name: March Hare
+short: March Hare
+face: marchhare.png
+
+=== rabbit ===
+name: White Rabbit
+short: White Rabbit
+face: rabbit.png
+
+=== madhatter ===
+name: Mad Hatter
+short: Mad Hatter
+face: madhatter.png
+
+=== queen ===
+name: Queen of Hearts
+short: Queen of Hearts
+face: queen.png
