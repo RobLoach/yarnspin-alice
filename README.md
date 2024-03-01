@@ -1,6 +1,6 @@
 # Alice's Wonderland Adventure
 
-The classic choose-your-own-adventure book, []*Alice's Wonderland Adventure*](https://videbouteilleprimaryschool.weebly.com/uploads/2/5/0/8/25089718/alices_wonderland_adventure.pdf), adapted to [Yarnspin](https://github.com/mattiasgustavsson/yarnspin).
+The classic choose-your-own-adventure book, [*Alice's Wonderland Adventure*](https://videbouteilleprimaryschool.weebly.com/uploads/2/5/0/8/25089718/alices_wonderland_adventure.pdf), adapted to [Yarnspin](https://github.com/mattiasgustavsson/yarnspin).
 
 ![Alice's Wonderland Adventure](images/title.png)
 
