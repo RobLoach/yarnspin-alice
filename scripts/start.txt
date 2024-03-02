@@ -375,7 +375,7 @@ txt: You wonder if you can find your way back to the long hall at the bottom of 
 txt: On the other hand, maybe if you just wish you were back...
 
 opt: The End
-act: restart
+act: title
 
 
 === page22 ===
@@ -402,7 +402,7 @@ txt: Will you ever shrink to your proper size?
 txt: You hope you won't be quite this big when you wake up from your dream!
 
 opt: The End
-act: restart
+act: title
 
 
 === page24 ===
@@ -459,7 +459,7 @@ txt: Why did you choose to go THIS WAY? Now you're stuck with a boring caterpill
 txt: What a way to spend the day... What a way to end a dream!
 
 opt: The End
-act: restart
+act: title
 
 
 === page28 ===
@@ -598,7 +598,7 @@ txt: Suddenly you hear a roar. Oh, no! There's a big waterfall ahead and you are
 txt: "I hope this is all a dream," you say. "Otherwise going THAT WAY really is going to lead to..."
 
 opt: The End
-act: restart
+act: title
 
 
 === page38 ===
@@ -634,7 +634,7 @@ img: 39.png
 txt: Oh, no! Now you're caught in a tug of war between two quarrelsome brothers, and you're the rope!
 
 opt: The End
-act: restart
+act: title
 
 
 === page40 ===
@@ -670,7 +670,7 @@ txt: Everyone keeps switching places and switching cups, and the Hatter and Hare
 txt: You've never had more fun at an un-birthday party in your life!
 
 opt: The End
-act: restart
+act: title
 
 
 === page42 ===
@@ -713,4 +713,4 @@ act: detach alice
 txt: You start to swat them away from your feet, and suddenly you find yourself back on the riverbank swatting at a dragonfly! It was all a dream!
 
 opt: The End
-act: restart
+act: title
