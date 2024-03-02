@@ -25,7 +25,14 @@ act: page0
 img: 0.png
 
 txt: It is a lazy summer day, and you are sitting by the bank of a peaceful river, enjoying the sunshine.
-txt: A swan gracefully glides by, and you watch until it is out of sight. You sigh and lean back against the tree.
+txt: A swan gracefully glides by, and you watch until it is out of sight.
+
+act: page0_1
+
+=== page0_1 ===
+img: 0.png
+
+txt: You sigh and lean back against the tree.
 txt: You are feeling happy and drowsy.
 
 opt: Close your eyes...
@@ -54,8 +61,19 @@ act: page2
 === page2 ===
 img: 2.png
 
-txt: You are about to ask her why she is chasing a white rabbit when she cries, "Look! He's going in that hole!"
-txt: And without another word, the girl crawls in a hole nearby. You don't know what's going on, but you want to find out.
+txt: You are about to ask her why she is chasing a white rabbit when she cries...
+
+act: page2_1
+
+=== page2_1 ===
+alice: Look! He's going in that hole!
+
+act: page2_2
+
+=== page2_2 ===
+img: 2.png
+
+txt: Without another word, the girl crawls in a hole nearby. You don't know what's going on, but you want to find out.
 txt: "Wait for me!" you shout.
 
 opt: Crawl into the hole
@@ -79,6 +97,13 @@ act: page6
 img: 4.png
 
 txt: You grab for a cupboard and scramble inside. But you are surprised to find that the inside of the cupboard is a long tunnel spiraling downward.
+
+act: page4_1
+
+
+=== page4_1 ===
+img: 4.png
+
 txt: You try to crawl back out, but the sides are too steep. You slide down at breakneck speed!
 
 act: page5
@@ -95,7 +120,8 @@ act: page7
 === page6 ===
 img: 6.png
 
-txt: You float down and down until you land with a thump at the bottom of the hole. You look around for the girl, but she's nowhere in sight. In front of you is a passage with doors all along it. You run to the end and reach another passageway. This one is flooded.
+txt: You float down and down until you land with a thump at the bottom of the hole. You look around for the girl, but she's nowhere in sight.
+txt: In front of you is a passage with doors all along it. You run to the end and reach another passageway. This one is flooded.
 
 act: page6_1
 
@@ -110,10 +136,10 @@ act: page10
 === page7 ===
 img: 7.png
 
-txt: You don't know who is underneath you, but you look up and recognize the girl you followed down the rabbit hole. And suddenly you realize that you and the girl are surrounded by giant playing cards!
+txt: You don't know who is underneath you, but you look up and recognize the girl you followed down the rabbit hole.
+txt: And suddenly you realize that you and the girl are surrounded by giant playing cards!
 txt: You must have gotten smaller! What's going on?
 txt: Is it magic, you wonder?
-txt: The girl looks at you...
 
 act: page7_1
 
@@ -145,7 +171,7 @@ act: page8_2
 === page8_2 ===
 img: 9.png
 
-txt: You and Alice run through a dark forest until you come to a fork in the road.
+txt: You and Alice run through the dark forest until you come to a fork in the road.
 
 act: page8_3
 
@@ -158,7 +184,7 @@ act: page9
 === page9 ===
 img: 9.png
 
-txt: Suddenly you notice two signs on a tree. One says THIS WAY, and the other says THAT WAY.
+txt: You notice two signs on a tree. One says THIS WAY, and the other says THAT WAY.
 txt: "Well?" asks Alice.
 txt: You shrug and say, "We can either go THIS WAY or THAT WAY, I think we should go..."
 
@@ -305,9 +331,8 @@ act: page17
 img: 17.png
 
 txt: You don't want the White Rabbit to get into trouble, but as Alice said, you probably won't ever find his gloves. And you are hungry.
-txt: Should you stop to eat some cookies, or should you keep looking for the gloves?
 
-opt: Eat some cookies
+opt: Stop to eat some cookies
 act: page22
 
 opt: Keep looking for the gloves
@@ -344,17 +369,23 @@ act: page20
 === page20 ===
 img: 20.png
 
-txt: The path leads to a small beach, where a strange race is going on. It has no beginning and no end - everyone just runs around and around a rock.
-txt: "Would you hold this?" asks Alice, as she hands you a little golden key. "I want to join the race."
+txt: The path leads to a small beach, where a strange race is going on.
+txt: It has no beginning and no end - everyone just runs around and around a rock.
 
-opt: Take the key
-act: detach alice
 act: page20_1
 
 === page20_1 ===
+
+alice: Would you hold this? I want to join the race.
+
+say: Take the little golden key that Alice hands you
+act: detach alice
+act: page20_2
+
+=== page20_2 ===
 img: 20.png
 
-txt: You hold the key in your hand and watch the runners. But the race is making you dizzy.
+txt: You hold the key in your hand and watch the runners. But the race is making you dizzy
 
 opt: Close your eyes for a moment...
 act: page21
@@ -372,7 +403,7 @@ act: page21_1
 img: 21.png
 
 txt: You wonder if you can find your way back to the long hall at the bottom of the rabbit hole. You're sure this is the key that opens the door to that wonderful place!
-txt: On the other hand, maybe if you just wish you were back...
+txt: Maybe if you just wish you were back...
 
 opt: The End
 act: title
@@ -467,9 +498,14 @@ img: 28.png
 
 act: detach alice
 txt: You look high and low for the White Rabbit's gloves. In one room you find a closet with a heavy door. You go inside-and the door slams shut behind you. You try to open it but you can't. You're locked in!
-txt: "Help!" you cry, but you know that Alice can't hear you through the thick door. You will have to open it yourself.
 
-opt: Open the door yourself
+act: page28_1
+
+=== page28_1
+you: Help, Alice!
+you: Alice cannot hear you through the thick door.
+
+say: Open the door yourself
 act: page29
 
 
@@ -676,10 +712,10 @@ act: title
 === page42 ===
 img: 42.png
 
-txt: After a while you come to a clearing-and there's Alice! But she seems to be in trouble. She is surrounded by giant playing cards, and the Queen of Hearts is shouting, "Off with her head!"
-txt: You rush up to Alice.
+txt: After a while you come to a clearing-and there's Alice!
+txt: But she seems to be in trouble. She is surrounded by giant playing cards, and the Queen of Hearts is shouting, "Off with her head!"
 
-opt: Help Alice
+opt: Rush over to help Alice
 act: attach alice
 act: page42_1
 

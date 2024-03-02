@@ -11,11 +11,11 @@ color_use: #363636
 color_name: #363636
 
 // Fonts
-font_txt: crimson.roman.ttf,55
-font_opt: crimson.bolditalic.ttf,55
-font_dialog: crimson.roman.ttf,55
-font_say: crimson.bolditalic.ttf,55
-font_response: crimson.bold.ttf,55
-font_chr: crimson.bold.ttf,55
-font_use: crimson.bold.ttf,55
-font_name: crimson.bold.ttf,64
+font_txt: crimson.roman.ttf,64
+font_opt: crimson.bolditalic.ttf,64
+font_dialog: crimson.roman.ttf,64
+font_say: crimson.bolditalic.ttf,64
+font_response: crimson.bold.ttf,64
+font_chr: crimson.bold.ttf,64
+font_use: crimson.bold.ttf,64
+font_name: crimson.bold.ttf,72
