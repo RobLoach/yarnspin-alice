@@ -1,5 +1,5 @@
 title: Alice's Wonderland Adventure
-version: 0.1
+version: 0.2
 author: Jim Razzi
 start: title
 colormode: rgb
@@ -40,7 +40,6 @@ txt: You open your eyes, and see a girl running by. She looks as if she's chasin
 
 opt: Jump up and run alongside her
 act: page1_1
-
 
 === page1_1 ===
 
@@ -107,6 +106,7 @@ doorknob: Through my keyhole, into my garden!
 
 act: page10
 
+
 === page7 ===
 img: 7.png
 
@@ -120,7 +120,7 @@ act: page7_1
 === page7_1 ===
 girl: Oh, dear! I'm afraid you just fell on the Queen of Hearts! Let's run before she gets mad and has our heads!
 
-say: Run before she gets mad
+say: Run before the Queen of Hearts gets mad
 act: page8
 
 
@@ -154,7 +154,8 @@ alice: Which way should we go?
 
 act: page9
 
-=== page9
+
+=== page9 ===
 img: 9.png
 
 txt: Suddenly you notice two signs on a tree. One says THIS WAY, and the other says THAT WAY.
@@ -351,7 +352,6 @@ opt: Take the key
 act: detach alice
 act: page20_1
 
-
 === page20_1 ===
 img: 20.png
 
@@ -359,6 +359,7 @@ txt: You hold the key in your hand and watch the runners. But the race is making
 
 opt: Close your eyes for a moment...
 act: page21
+
 
 === page21 ===
 img: 21.png
@@ -375,7 +376,7 @@ txt: You wonder if you can find your way back to the long hall at the bottom of 
 txt: On the other hand, maybe if you just wish you were back...
 
 opt: The End
-act: title
+act: restart
 
 
 === page22 ===
@@ -395,7 +396,6 @@ txt: Oh, why did you eat those cookies? Why didn't you just TAKE ONE, as the lab
 
 act: page23_1
 
-
 === page23_1 ===
 img: 23.png
 
@@ -403,7 +403,7 @@ txt: Will you ever shrink to your proper size?
 txt: You hope you won't be quite this big when you wake up from your dream!
 
 opt: The End
-act: title
+act: restart
 
 
 === page24 ===
@@ -453,7 +453,6 @@ txt: You groan and sit down.
 
 act: page27_1
 
-
 === page27_1 ===
 img: 27.png
 
@@ -461,7 +460,7 @@ txt: Why did you choose to go THIS WAY? Now you're stuck with a boring caterpill
 txt: What a way to spend the day... What a way to end a dream!
 
 opt: The End
-act: title
+act: restart
 
 
 === page28 ===
@@ -482,7 +481,6 @@ txt: You push and pull and tug, but the door won't budge. Then, in the light tha
 
 opt: Use the can of oil
 act: page29_1
-
 
 === page29_1 ===
 img: 29.png
@@ -559,7 +557,6 @@ txt: Soon all that is left is his grin.
 
 act: page34_1
 
-
 === page34_1 ===
 
 alice: Well, I've often seen a cat without a grin, but a grin without a cat! It's the most curious thing I ever saw in all my life!
@@ -586,7 +583,6 @@ txt: Is it raining? No! It's the Weeping Willows. They are crying with Alice! Th
 
 act: page36_1
 
-
 === page36_1 ===
 
 you: Stop crying, Alice. You're making the Weeping Willows cry, too!
@@ -603,7 +599,7 @@ txt: Suddenly you hear a roar. Oh, no! There's a big waterfall ahead and you are
 txt: "I hope this is all a dream," you say. "Otherwise going THAT WAY really is going to lead to..."
 
 opt: The End
-act: title
+act: restart
 
 
 === page38 ===
@@ -639,7 +635,7 @@ img: 39.png
 txt: Oh, no! Now you're caught in a tug of war between two quarrelsome brothers, and you're the rope!
 
 opt: The End
-act: title
+act: restart
 
 
 === page40 ===
@@ -675,7 +671,7 @@ txt: Everyone keeps switching places and switching cups, and the Hatter and Hare
 txt: You've never had more fun at an un-birthday party in your life!
 
 opt: The End
-act: title
+act: restart
 
 
 === page42 ===
@@ -718,4 +714,4 @@ act: detach alice
 txt: You start to swat them away from your feet, and suddenly you find yourself back on the riverbank swatting at a dragonfly! It was all a dream!
 
 opt: The End
-act: title
+act: restart
