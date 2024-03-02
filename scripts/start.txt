@@ -258,8 +258,7 @@ img: 13.png
 txt: "Excuse me," you say again, "but we would like to know where THAT WAY leads to."
 txt: The cat just keeps grinning from ear to ear. "Excuse me, too," says Alice timidly, "but why are you grinning?"
 txt: "Why are you asking so many questions?" asks the cat, pointing to Alice.
-txt: "Because we want to know where THAT WAY
-leads to!" you say a bit angrily.
+txt: "Because we want to know where THAT WAY leads to!" you say a bit angrily.
 
 act: page30
 
