@@ -66,12 +66,12 @@ act: page3
 img: 3.png
 
 txt: You find yourself falling through space! But you are falling in slow motion.
-txt: Presently you notice that you are floating past cupboards and shelves, clocks and mirrors. Maybe you could grab for something and break your fall. Or you could let yourself continue to float downward.
+txt: Presently you notice that you are floating past cupboards and shelves, clocks and mirrors.
 
-opt: Make a grab for something
+opt: Grab something to break your fall
 act: page4
 
-opt: Let yourself continue to fall
+opt: Let yourself continue to fall downward
 act: page6
 
 
@@ -543,7 +543,7 @@ txt: The only other path, though, leads through some thick bushes.
 opt: Ignore the sign and go into the garden
 act: page38
 
-opt: Go through the bushes
+opt: Go through the thick bushes
 act: page40
 
 
