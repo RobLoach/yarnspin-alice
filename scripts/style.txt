@@ -1,0 +1,21 @@
+// Colors
+color_background: #FFFFFF
+color_disabled: #363636
+color_txt: #363636
+color_opt: #363636
+color_dialog: #363636
+color_say: #363636
+color_response: #363636
+color_chr: #363636
+color_use: #363636
+color_name: #363636
+
+// Fonts
+font_txt: AlegreyaSans-Medium.ttf,55
+font_opt: AlegreyaSans-Bold.ttf,55
+font_dialog: AlegreyaSans-Medium.ttf,55
+font_say: AlegreyaSans-Bold.ttf,55
+font_response: AlegreyaSans-Bold.ttf,55
+font_chr: AlegreyaSans-Bold.ttf,55
+font_use: AlegreyaSans-Bold.ttf,55
+font_name: AlegreyaSans-Bold.ttf,55

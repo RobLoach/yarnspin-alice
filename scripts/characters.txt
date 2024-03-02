@@ -44,3 +44,8 @@ face: madhatter.png
 name: Queen of Hearts
 short: Queen of Hearts
 face: queen.png
+
+=== caterpillar ===
+name: Caterpillar
+short: Caterpillar
+face: caterpillar.png

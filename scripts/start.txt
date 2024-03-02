@@ -24,7 +24,9 @@ act: page0
 === page0 ===
 img: 0.png
 
-txt: It is a lazy summer day, and you are sitting by the bank of a peaceful river, enjoying the sunshine. A swan gracefully glides by, and you watch until it is out of sight. You sigh and lean back against the tree. You are feeling happy and drowsy.
+txt: It is a lazy summer day, and you are sitting by the bank of a peaceful river, enjoying the sunshine.
+txt: A swan gracefully glides by, and you watch until it is out of sight. You sigh and lean back against the tree.
+txt: You are feeling happy and drowsy.
 
 opt: Close your eyes...
 act: page1
@@ -113,16 +115,21 @@ img: 7.png
 txt: You don't know who is underneath you, but you look up and recognize the girl you followed down the rabbit hole. And suddenly you realize that you and the girl are surrounded by giant playing cards!
 txt: You must have gotten smaller! What's going on?
 txt: Is it magic, you wonder?
-txt: The girl looks at you. "Oh, dear!" she says. "I'm afraid you just fell on the Queen of Hearts! Let's run before she gets mad and has our heads!"
+txt: The girl looks at you...
 
-opt: Run before she gets mad
+act: page7_1
+
+=== page7_1 ===
+girl: Oh, dear! I'm afraid you just fell on the Queen of Hearts! Let's run before she gets mad and has our heads!
+
+say: Run before she gets mad
 act: page8
 
 
 === page8 ===
 img: 8.png
 
-txt: You dash after the girl through the forest and find a girl.
+txt: You dash after the girl into a dark forest.
 
 opt: Speak with the girl
 act: page8_1
@@ -142,12 +149,16 @@ img: 9.png
 
 txt: You and Alice run through a dark forest until you come to a fork in the road.
 
+act: page8_3
+
+=== page8_3 ===
+alice: Which way should we go?
+
 act: page9
 
 === page9
 img: 9.png
 
-txt: "Which way should we go?" says Alice.
 txt: Suddenly you notice two signs on a tree. One says THIS WAY, and the other says THAT WAY.
 txt: "Well?" asks Alice.
 txt: You shrug and say, "We can either go THIS WAY or THAT WAY, I think we should go..."
@@ -383,6 +394,13 @@ img: 23.png
 
 txt: "Alice, help!" you yell, as your head pushes roof off the house. You're so big that there's no more room for Alice in the house. She runs outside and looks at you helplessly as you grow up and up.
 txt: Oh, why did you eat those cookies? Why didn't you just TAKE ONE, as the label said.
+
+act: page23_1
+
+
+=== page23_1 ===
+img: 23.png
+
 txt: Will you ever shrink to your proper size?
 txt: You hope you won't be quite this big when you wake up from your dream!
 
@@ -395,16 +413,21 @@ img: 24.png
 
 txt: You and Alice follow the overgrown path to THIS WAY. After walking a bit, you hear, "Stop!"
 txt: You look up in surprise and see a funny-looking caterpillar sitting on a mushroom.
-txt: "Why must we stop?" you ask politely. "We want to go THIS WAY."
-txt: "Well, if you want to go THIS WAY," says the Caterpillar, "you will have to go THAT WAY to get there."
+
+act: page24_1
+
+=== page24_1 ===
+you: Why must we stop? We want to go THIS WAY.
+caterpillar: Well, if you want to go THIS WAY, you will have to go THAT WAY to get there.
+alice: But we don't want to go THAT WAY. That's why we picked THIS WAY!
+caterpillar: I just told you, you can't go THIS WAY this way.
 
 act: page25
+
 
 === page25 ===
 img: 25.png
 
-txt: "But we don't want to go THAT WAY. That's why we picked THIS WAY!" says Alice, a little crossly.
-txt: "I just told you," says the Caterpillar, a little crossly, too. "You can't go THIS WAY this way."
 txt: You and Alice look at each other. You want to go THIS WAY, but you are afraid of making the Caterpillar mad-especially since he's so big!
 
 act: page26
@@ -428,7 +451,15 @@ act: page27
 img: 27.png
 
 txt: "But don't worry," he continues. "I will entertain you. I know all my multiplication tables and I'll recite them for you, one after the other."
-txt: You groan and sit down. Why did you choose to go THIS WAY? Now yov're stuck with a boring caterpillar who loves arithmetic.
+txt: You groan and sit down.
+
+act: page27_1
+
+
+=== page27_1 ===
+img: 27.png
+
+txt: Why did you choose to go THIS WAY? Now you're stuck with a boring caterpillar who loves arithmetic.
 txt: What a way to spend the day... What a way to end a dream!
 
 opt: The End
@@ -499,15 +530,27 @@ img: 32.png
 
 txt: You and Alice continue along the path.
 txt: Soon you come upon a big sign that says KEEP OUT BY ORDER OF TWEEDLEDUM. Beyond it lies a garden.
-txt: "Who's Tweedledum?" asks Alice.
-txt: "It's such a silly name," you answer. "I'm sure it's no one important."
-txt: You want to follow a path that goes through the garden, but Alice isn't sure that's a good idea. The only other path, though, leads through some thick bushes.
 
-opt: Go into the garden
+act: page33_1
+
+=== page33_1 ===
+alice: Who's Tweedledum?
+you: It's such a silly name, I'm sure it's no one important.
+
+act: page33_2
+
+=== page33_2
+img: 32.png
+
+txt: You want to follow a path that goes through the garden, but Alice isn't sure that's a good idea.
+txt: The only other path, though, leads through some thick bushes.
+
+opt: Ignore the sign and go into the garden
 act: page38
 
 opt: Go through the bushes
 act: page40
+
 
 === page34 ===
 img: 34.png
@@ -515,7 +558,14 @@ img: 34.png
 txt: "What do you mean THAT WAY leads to THE END?" you ask the Cheshire Cat.
 txt: But instead of answering, the cat starts to disappear!
 txt: Soon all that is left is his grin.
-txt: "Well," says Alice, "I've often seen a cat without a grin, but a grin without a cat! It's the most curious thing I ever saw in all my life!"
+
+act: page34_1
+
+
+=== page34_1 ===
+
+alice: Well, I've often seen a cat without a grin, but a grin without a cat! It's the most curious thing I ever saw in all my life!
+you: Me too, and by the way, I'm more curious than ever to find out where THAT WAY leads!
 
 act: page35
 
@@ -523,7 +573,6 @@ act: page35
 === page35 ===
 img: 35.png
 
-txt: "Me, too," you answer. "And by the way, I'm more curious than ever to find out where THAT WAY leads!"
 txt: So you and Alice continue down the path.
 txt: In a little while you come to a grove of Weeping Willow trees.
 txt: Suddenly Alice stubs her toe on a rock and starts to cry.
@@ -536,8 +585,14 @@ img: 36.png
 
 txt: You are trying to make her feel better, when a big drop of water falls on your head. Then another... and another and another.
 txt: Is it raining? No! It's the Weeping Willows. They are crying with Alice! They cry so hard they start a small flood!
-txt: "Stop crying, Alice," you say. "You're making the Weeping Willows cry, too!"
-txt: "I can't," sobs Alice. "It hurts too much!"
+
+act: page36_1
+
+
+=== page36_1 ===
+
+you: Stop crying, Alice. You're making the Weeping Willows cry, too!
+alice: I can't, it hurts too much!
 
 act: page37
 
@@ -547,7 +602,7 @@ img: 37.png
 
 txt: You try to help her up, but now the flood of tears has turned into a small river. You and Alice are swept along like two leaves.
 txt: Suddenly you hear a roar. Oh, no! There's a big waterfall ahead and you are heading right for it!
-txt: "I hope this is all a dream," you say. "Otherwise going THAT WAY really is going to lead to...
+txt: "I hope this is all a dream," you say. "Otherwise going THAT WAY really is going to lead to..."
 
 opt: The End
 act: title
@@ -566,12 +621,23 @@ act: page39
 
 
 === page39 ===
-img: 39.png
+img: 38.png
 
 txt: You are wondering what's going on when you see the other side of the sign, the side that's facing the garden. It says KEEP IN BY ORDER OF TWEEDLEDEE.
 txt: Just then, Tweedledum and Tweedledee pull at the same time. You feel as if you're stretching.
 txt: You look at your arms-you are!
-txt: "Help!" you cry to Alice, but there's nothing she can do.
+
+act: page39_1
+
+=== page39_1 ===
+you: Help, Alice!
+player: There's nothing Alice can do.
+
+act: page39_2
+
+=== page39_2 ===
+img: 39.png
+
 txt: Oh, no! Now you're caught in a tug of war between two quarrelsome brothers, and you're the rope!
 
 opt: The End
