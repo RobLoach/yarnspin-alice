@@ -19,7 +19,7 @@ auto: readthisfirst, 5s
 === readthisfirst ===
 
 scr: readthisfirst.png
-auto: page0, 5s
+act: page0
 
 === page0 ===
 img: 0.png
