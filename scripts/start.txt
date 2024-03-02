@@ -97,8 +97,6 @@ act: page7
 img: 6.png
 
 txt: You float down and down until you land with a thump at the bottom of the hole. You look around for the girl, but she's nowhere in sight. In front of you is a passage with doors all along it. You run to the end and reach another passageway. This one is flooded.
-txt: "Now, where did she go?" you say aloud.
-txt: "Through my keyhole, into my garden!" says a doorknob.
 
 act: page6_1
 
