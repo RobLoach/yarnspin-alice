@@ -186,9 +186,9 @@ act: page10_2
 === page10_2 ===
 img: 6.png
 
-txt: You can't believe it will be that easy, but you close your eyes and wish, anyway.
+txt: You can't believe it will be that easy.
 
-opt: Close your eyes
+opt: Close your eyes and wish
 act: page10_3
 
 === page10_3 ===
@@ -220,12 +220,12 @@ act: page11_2
 img: 11.png
 
 txt: At that very moment the White Rabbit runs by and he's all dressed up!
-txt: You ask Alice what she wants to do: Follow the rabbit, or forget him and go exploring.
+txt: You ask Alice what she wants to do.
 
 opt: Follow the White Rabbit
 act: page14
 
-opt: Go exploring
+opt: Forget him and go exploring
 act: page18
 
 
@@ -234,7 +234,7 @@ img: 12.png
 
 txt: You and Alice follow the path to THAT WAY. You have gone only a little way when you see a Cheshire Cat on the branch of a tree.
 
-opt: Talk to the Cheshire Cat
+opt: Speak with the Cheshire Cat
 act: page12_1
 
 === page12_1 ===
