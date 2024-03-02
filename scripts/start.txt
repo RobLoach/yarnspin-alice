@@ -38,6 +38,11 @@ txt: You are feeling happy and drowsy.
 opt: Close your eyes...
 act: page1
 
+// Cheat
+//opt: Close your eyes and wish for a key...
+//act: get Golden Key
+//act: page1
+
 
 === page1 ===
 img: 1.png
@@ -201,7 +206,11 @@ img: 6.png
 txt: You jump with surprise. A talking doorknob!
 txt: But you recover quickly...
 
+opt: Speak with the doorknob
 act: page10_1
+
+use: Golden Key
+act: goldenkeyused
 
 === page10_1 ===
 you: How can I get into your garden?
@@ -216,6 +225,19 @@ txt: You can't believe it will be that easy.
 
 opt: Close your eyes and wish
 act: page10_3
+
+use: Golden Key
+act: goldenkeyused
+
+
+=== goldenkeyused ===
+img: 21.png
+txt: After using the Golden Key on the doorknob, you find a wonderful place!
+
+act: drop Golden Key
+
+opt: The End
+act: title
 
 === page10_3 ===
 img: 10.png
@@ -376,10 +398,11 @@ act: page20_1
 
 === page20_1 ===
 
-alice: Would you hold this? I want to join the race.
+alice: Would you hold this key? I want to join the race.
 
-say: Take the little golden key that Alice hands you
+say: Take the little Golden Key that Alice hands you
 act: detach alice
+act: get Golden Key
 act: page20_2
 
 === page20_2 ===
