@@ -630,6 +630,11 @@ act: page37
 img: 37.png
 
 txt: You try to help her up, but now the flood of tears has turned into a small river. You and Alice are swept along like two leaves.
+
+act: page37_1
+
+=== page37_1 ===
+
 txt: Suddenly you hear a roar. Oh, no! There's a big waterfall ahead and you are heading right for it!
 txt: "I hope this is all a dream," you say. "Otherwise going THAT WAY really is going to lead to..."
 
