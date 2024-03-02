@@ -6,8 +6,7 @@
     "http-server": "^14.1.1"
   },
   "scripts": {
-    "prepublish": "npm run package",
-    "publish": "gh-pages -d package",
+    "publish": "gh-pages -d dist",
     "start": "yarnspin --window",
     "prestartweb": "npm run package",
     "startweb": "http-server dist",
