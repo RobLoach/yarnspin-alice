@@ -1,9 +1,9 @@
 *.pdf
 *.dat
 *.w64
-*.html
+index.html
+dist
 /yarnspin
-/build
 .cache
 content.txt
 /package

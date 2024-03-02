@@ -2,14 +2,18 @@
   "name": "yarnspin-alice",
   "private": true,
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "http-server": "^14.1.1"
   },
   "scripts": {
     "prepublish": "npm run package",
     "publish": "gh-pages -d package",
     "start": "yarnspin --window",
+    "prestartweb": "npm run package",
+    "startweb": "http-server dist",
     "build": "yarnspin --compile",
-    "prepackage": "mkdir -p package",
-    "package": "yarnspin -p package/index.html"
+    "prepackage": "mkdir -p dist",
+    "package": "yarnspin -p dist/index.html",
+    "test": "npm run build"
   }
 }
