@@ -282,7 +282,7 @@ img: 12.png
 
 txt: You and Alice follow the path to THAT WAY. You have gone only a little way when you see a Cheshire Cat on the branch of a tree.
 
-opt: Speak with the Cheshire Cat
+opt: Ask the Cheshire Cat for directions
 act: page12_1
 
 === page12_1 ===
@@ -417,7 +417,7 @@ act: page21
 === page21 ===
 img: 21.png
 
-txt: ...and when you open your eyes, you're back on the riverbank. Was it all a dream?
+txt: When you open your eyes, you're back on the riverbank. Was it all a dream?
 txt: You feel something in your hand. You are still holding the key that Alice gave you!
 
 act: page21_1
@@ -465,6 +465,7 @@ img: 24.png
 txt: You and Alice follow the overgrown path to THIS WAY. After walking a bit, you hear, "Stop!"
 txt: You look up in surprise and see a funny-looking caterpillar sitting on a mushroom.
 
+opt: Speak with the Caterpillar
 act: page24_1
 
 === page24_1 ===
